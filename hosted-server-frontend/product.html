@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="css/styleProduct.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  
+</head>
+<body>
+
+
+  <div id="nav-bar"> 
+    <a href="home.html" id="logo"><h1>SCMarketPro</h1></a>
+    <div id="nav-bar-options">
+        <a href="login.html" id="loginLink">Login</a>
+        <a href="signup.html" id="signupLink">Sign up</a>
+        <a href="bookmark.html" id="bookmarksLink" style="display: none;">Bookmarks</a>
+        <a href="create.html" id="createLink" style="display: none;">Create Post</a>
+        <a href="myproducts.html" id="myproductsLink" style="display: none;">My Posts</a>
+        <a href="home.html" id="signoutLink" style="display: none;">Sign out</a>
+        
+    </div><!--Nav bar option-->
+  </div><!--Nav bar-->
+
+  <div class="container">
+
+    
+    <div class="product-details" id="product-page">
+      <div class="left-details">
+
+        <h2 id="product-name">Item Name</h2>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            
+          </div>
+          <div class="carousel-inner">
+
+          </div><!--Carousel inner-->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div><!--Carousel-->
+      </div><!--Left details-->
+
+      <div class="right-details" id="right-info">
+        
+      </div><!--Right-details-->
+
+    </div><!--Product details-->
+
+
+
+  </div><!--Container-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/userState.js"></script>
+  <script src="js/product.js"></script>
+  
+  <script>  
+    
+    // Will fetch all the info for the post the user wants to view
+    fetchPost(sessionStorage.getItem('postId'))
+  </script>
+
+</body>
+</html>

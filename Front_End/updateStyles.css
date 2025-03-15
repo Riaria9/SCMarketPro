@@ -1,0 +1,88 @@
+/* css code taken from styleProduct.css */
+body {
+    /*font-family: Arial, sans-serif;*/
+    margin: 0;
+    padding: 0;
+}
+
+/* container for all */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    color: crimson;
+}
+
+/* for the product info container */
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* setting left and right separations */
+.left-details,
+.right-details {
+    width: 45%;
+}
+
+/* style adjustments for form elements */
+form.product-details .form-control {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+form.product-details textarea {
+    height: 100px;
+}
+
+form.product-details label {
+    font-weight: bold;
+}
+
+/* button*/
+.btncontainer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 5vh; 
+}
+
+.btn{
+    background-color: crimson;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.btn:hover{
+    background-color: white; 
+    color: crimson; 
+    border-color: crimson; 
+}
+
+/* responsive adjustments */
+@media (max-width: 768px) {
+    .product-details {
+        flex-direction: column;
+    }
+
+    .left-details,
+    .right-details {
+        width: 100%;
+    }
+}
+
+.form-control[readonly] {
+    background-color: #f3f3f3;
+    cursor: not-allowed;
+}

@@ -1,0 +1,45 @@
+.product-preview{
+  
+  min-width: 300px;
+  min-height: 300px;
+  margin: 10px;
+  background-image: url('https://www.cnet.com/a/img/resize/7dc61a88052f656e89de965da1bd3c3f5b71e58b/hub/2017/06/06/349b7e65-a855-44f0-ae0a-6610ebca0809/apple-macbook-pro-12-inch-2017-4181.jpg?auto=webp&fit=crop&height=900&width=1200');
+  background-size:cover;
+  background-position: center;
+  border-radius: 3%;
+}
+
+
+.product-preview-options{
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.product-preview-options button {
+  margin: 10px; 
+}
+
+button[type="button"]{
+ color: white; 
+}
+.product-preview:hover .product-preview-options{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 3%;
+  visibility: visible;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  margin-top: 3em;
+  max-width: 1500px;
+  justify-content: center;
+}
+

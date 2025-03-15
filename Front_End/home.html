@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<script src="js/userState.js"></script>
+	<div class="block_wrapper">
+		<div id="left_block">
+			<a href="home.html" class="return_btn"><h2>SCMarketPro</h2></a>
+			<div class="filter_block" style="cursor: pointer;">
+				<div id="filter_options"><h2>Filter</h2></div>
+				<ul>
+					<li><div class="filter"><h3>Price High To Low</h3></div></li>
+					<li><div class="filter"><h3>Price Low To High</h3></div></li>
+					<li><div class="filter"><h3>Reset</h3></div></li>
+				</ul>
+			</div>
+			<h2>Categories</h2>
+			<div class="category_wrapper">
+				<div id="category1" style="display: flex; padding: 10px;" onclick="textbookDisplay()">
+					<div class="image_block" style="width: 40%;">
+						<img src="image/textbook.jpg" alt="textbook">
+					</div>
+					<div class="name_block">
+						<h4>Textbook</h4>
+					</div>
+				</div>
+
+				<div id="category2" style="display: flex; padding: 10px;" onclick="electronicsDisplay()">
+					<div class="image_block" style="width: 40%;">
+						<img src="image/electronics.jpg" alt="electronics">
+					</div>
+					<div class="name_block">
+						<h4>Electronics</h4>
+					</div>
+				</div>
+
+				<div id="category3" style="display: flex; padding: 10px;" onclick="apparelDisplay()">
+					<div class="image_block" style="width: 40%;">
+						<img src="image/apparel.jpg" alt="apparel">
+					</div>
+					<div class="name_block">
+						<h4>Apparel</h4>
+					</div>
+				</div>
+
+				<div id="category4" style="display: flex; padding: 10px;" onclick="dormDisplay()">
+					<div class="image_block" style="width: 40%;">
+						<img src="image/dorm.jpg" alt="dorm">
+					</div>
+					<div class="name_block">
+						<h4>Dorm</h4>
+					</div>
+				</div>
+
+				<div id="category5" style="display: flex; padding: 10px;" onclick="suppliesDisplay()">
+					<div class="image_block" style="width: 40%;">
+						<img src="image/supplies.jpg" alt="supplies">
+					</div>
+					<div class="name_block">
+						<h4>Supplies</h4>
+					</div>
+				</div>
+
+				<div id="category6" style="display: flex; padding: 10px;" onclick="featured()">
+					<div class="image_block" style="width: 40%;">
+						<img src="image/featured.jpeg" alt="featured">
+					</div>
+					<div class="name_block">
+						<h4>Featured</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="right_block">
+			<div class="login_bar">
+				<a class="btn_home" href="login.html" id="loginLink">Login</a>
+				<a class="btn_home" href="signup.html" id="signupLink">Sign Up</a>
+
+				<a class="btn_home" href="bookmark.html" id="bookmarksLink" style="display: none;">Bookmarks</a>
+				<a class="btn_home" href="bookmark.html" id="myproductsLink" style="display: none;">My Product</a>
+				<a class="btn_home" href="bookmark.html" id="signoutLink" style="display: none;">Log Out</a>
+			</div>
+
+			<div class="name_bar">
+				<h1 style="margin: 30px 30px 0;">SCMarketPro</h1>
+				<form id="SearchForm">
+					<input type="text" class="search_box" required>
+					<button id="search-btn">Search</button>
+				</form>
+			</div>
+
+			<h2 style="width:50px; padding:30px 100px 20px; color: crimson;">Featured:</h2>
+			<div class="product_block">
+				<div class="textbook">
+					<div class="prod_img">
+						<img src="image/CSCI201_Book.jpg" alt="csci201_textbook">
+					</div>
+					<div class="prod_info">
+						<h3>CSCI 201 Textbook</h3>
+						<h3>$119.99</h3>
+					</div>
+				</div>
+
+				<div class="electronics">
+					<div class="prod_img">
+						<img src="image/macbook.jpg" alt="macbook">
+					</div>
+					<div class="prod_info">
+						<h3>MacBook Pro</h3>
+						<h3>$1,599.00</h3>
+					</div>
+				</div>
+
+				<div class="apparel">
+					<div class="prod_img">
+						<img src="image/usc_hoodie.jpg" alt="usc_hoodie">
+					</div>
+					<div class="prod_info">
+						<h3>USC Hoodie</h3>
+						<h3>$45</h3>
+					</div>
+				</div>
+
+				<div class="electronics">
+					<div class="prod_img">
+						<img src="image/airpods.jpg" alt="airpods">
+					</div>
+					<div class="prod_info">
+						<h3>Apple Airpods 1</h3>
+						<h3>$50</h3>
+					</div>
+				</div>
+
+				<div class="dorm">
+					<div class="prod_img">
+						<img src="image/pillow.jpg" alt="pillow">
+					</div>
+					<div class="prod_info">
+						<h3>Flower Pillow</h3>
+						<h3>$10</h3>
+					</div>
+				</div>
+
+				<div class="supplies">
+					<div class="prod_img">
+						<img src="image/pencil.jpg" alt="pencil">
+					</div>
+					<div class="prod_info">
+						<h3>No.2 Pencils</h3>
+						<h3>$1</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

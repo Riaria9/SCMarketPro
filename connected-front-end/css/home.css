@@ -1,0 +1,301 @@
+.Logo{
+    text-align: center;
+    padding: 80px 40px 0;
+}
+
+.Logo h1{
+    color: crimson;
+    font-size: 130px;
+}
+
+.info_wrapper{
+    text-align: center;
+    display: block;
+}
+
+.login_block{
+    margin: 20px;
+}
+
+.info{
+    margin: 20px;
+    color: crimson;
+    font-size: 20px;
+}
+
+.input_box{
+    width: 400px;
+}
+
+.btncontainer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 5vh; 
+}
+
+.btn{
+    background-color: crimson;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.btn:hover{
+    background-color: white; 
+    color: crimson; 
+    border-color: crimson; 
+}
+
+.block_wrapper{
+    text-align: center;
+    background-color: whitesmoke;
+    display: flex;
+    overflow: hidden;
+    width: auto;
+}
+#left_block{
+    width: 20%;
+    height: auto;
+    background-color: azure;
+    overflow: scroll;
+}
+#right_block{
+    width: 82%;
+    height: auto;
+    position: relative;
+    overflow: scroll;
+}
+
+#left_block h2{
+    color: crimson;
+    font-size: 30px;
+    border: 0.5px solid silver;
+    margin: 0px;
+    padding: 15px 10px;
+}
+
+.return_btn{
+    text-decoration: none;
+}
+
+#left_block .return_btn:hover > h2{
+    background-color: maroon;
+    color: gold;
+}
+
+.filter_block ul {
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    width: 277px;
+}
+
+.filter_block:hover > #filter_options{
+    background-color: maroon;
+}
+
+.filter_block:hover > #filter_options > h2{
+    color: gold;	
+}
+
+.filter_block:hover > ul{
+    visibility: visible;
+    z-index: 1;
+}
+
+.filter_block li:hover{
+    background-color: maroon;
+    color: gold;
+}
+
+#filter_options h2{
+    color: crimson;
+    font-size: 30px;
+    border: 0.5px solid silver;
+    margin: 0px;
+    padding: 15px 10px;
+}
+.filter{
+    border: 0.8px solid black;
+    width: 100%;
+    height: auto;
+    
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#category1:hover{
+    background-color: maroon;
+    cursor: pointer;
+}
+
+#category1:hover > .name_block > h4{
+    color: gold;
+}
+
+#category2:hover{
+    background-color: maroon;
+    cursor: pointer;
+}
+
+#category2:hover > .name_block > h4{
+    color: gold;
+}
+
+#category3:hover{
+    background-color: maroon;
+    cursor: pointer;
+}
+
+#category3:hover > .name_block > h4{
+    color: gold;
+}
+
+#category4:hover{
+    background-color: maroon;
+    cursor: pointer;
+}
+
+#category4:hover > .name_block > h4{
+    color: gold;
+}
+
+#category5:hover{
+    background-color: maroon;
+    cursor: pointer;
+}
+
+#category5:hover > .name_block > h4{
+    color: gold;
+}
+
+#category6:hover{
+    background-color: maroon;
+    cursor: pointer;
+}
+
+#category6:hover > .name_block > h4{
+    color: gold;
+}
+
+.image_block img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.name_block{
+    text-align: center;
+    width: 60%;
+}
+
+.name_block h4{
+    font-size: 25px;
+    color: crimson;
+}
+
+.btn_home{
+    background-color: maroon;
+    width: 100px;
+    height: 30px;
+    padding-top: 10px;
+    color: gold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.login_bar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.name_bar{
+    color: crimson;
+    font-size: 40px;
+}
+
+.name_bar .search_box{
+    width: 800px;
+    height: 52px;
+    background-color: lightgray;
+    display: inline-block;
+}
+
+#search-btn{
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    border: 1 px solid crimson;
+    margin: 5px 20px 0 45px;
+    padding: 18px 10px 40px;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: maroon;
+    border-radius: 10%;
+    text-align: center;
+    vertical-align: middle;
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    font-family: serif;
+}
+
+.product_block{
+    width: auto;
+}
+.textbook{
+    width: 260px;
+    height: 300px;
+    padding: 10px 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.electronics{
+    width: 260px;
+    height: 300px;
+    padding: 10px 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.apparel{
+    width: 260px;
+    height: 300px;
+    padding: 10px 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dorm{
+    width: 260px;
+    height: 300px;
+    padding: 10px 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.supplies{
+    width: 260px;
+    height: 300px;
+    padding: 10px 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.prod_img img{
+    height: 200px;
+    width: auto;
+}
+

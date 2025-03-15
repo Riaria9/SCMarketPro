@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    color: crimson;
+  }
+  
+  .product-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .left-details,
+  .right-details {
+    width: 45%;
+  }
+  
+  .left-details img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .right-details {
+    text-align: center;
+  }
+  
+  .add-to-bookmarks {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
